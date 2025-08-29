@@ -1,0 +1,31 @@
+#!/bin/sh
+# This loads nvm.sh and sets the correct PATH before running hook
+
+# 🔍 自動偵測執行環境
+if command -v bun &>/dev/null; then
+  RUNNER="bun x"
+elif command -v pnpm &>/dev/null; then
+  RUNNER="pnpm dlx"
+else
+  RUNNER="npx"
+fi
+
+echo "🔍 Running lint-staged checks using [$RUNNER]..."
+
+# 1️⃣ 執行 `lint-staged`
+echo "🔍 Running lint-staged..."
+$RUNNER lint-staged
+if [ $? -ne 0 ]; then
+  echo "❌ Lint-staged check failed in $project. Commit aborted."
+  exit 1
+fi
+
+# 2️⃣ 執行 precommit
+echo "🔧 Running precommit..."
+$RUNNER precommit
+if [ $? -ne 0 ]; then
+  echo "❌ precommit failed in $project. Commit aborted."
+  exit 1
+fi
+
+echo "✅ All checks passed. Proceeding with commit."

@@ -1,0 +1,39 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint -c ./eslint.config.mjs \"./src*/**/*.{mjs,ts,vue,scss,md,json}\"",
+    "format": "prettier --write --ignore-unknown \"**/*.{mjs,ts,vue,scss,md,json}\"",
+    "precommit": "pretty-quick --staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "1.9.0",
+    "eslint": "^9.34.0",
+    "nuxt": "^4.0.3",
+    "vue": "^3.5.20",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@pinia/nuxt": "^0.11.2",
+    "@vee-validate/nuxt": "^4.15.1",
+    "@vee-validate/zod": "^4.15.1",
+    "@vueuse/nuxt": "^13.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "nuxt-security": "^2.4.0",
+    "prettier": "3.6.2",
+    "pretty-quick": "^4.2.2",
+    "sass-embedded": "^1.91.0",
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.0.6",
+    "vuetify-nuxt-module": "^0.18.7"
+  }
+}

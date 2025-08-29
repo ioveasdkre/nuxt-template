@@ -1,0 +1,15 @@
+{
+  "Nuxt 3 Setup API": {
+    "prefix": "nsetup",
+    "body": [
+      "<template>",
+      "   <div></div>",
+      "</template>",
+      "<script setup lang=\"ts\">",
+      "</script>",
+      "<style scoped lang=\"scss\">",
+      "</style>",
+    ],
+    "description": "Nuxt 3 setup API 基本範本",
+  },
+}

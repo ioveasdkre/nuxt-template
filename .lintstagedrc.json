@@ -1,0 +1,3 @@
+{
+  "*.{mjs,ts,vue,scss,md,json}": ["eslint --fix", "prettier --write . --ignore-unknown"]
+}

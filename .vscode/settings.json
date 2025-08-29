@@ -1,0 +1,207 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.ignoreWords": [
+    "Nuxt",
+    "vueuse",
+    "vuetify",
+  ],
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "XXX",
+    "NOTE",
+    "HACK",
+    "BUG",
+    "TEST",
+    "!",
+    "?",
+    ">",
+    "-"
+  ],
+  "todo-tree.regex.regexCaseSensitive": false,
+  "todo-tree.highlights.customHighlight": {
+    // TODO: 功能未完成
+    "TODO": {
+      "background": "#f5c018",
+      "foreground": "#000",
+      "iconColour": "#f5c018",
+      "icon": "check",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // FIXME: 需要修復的事項
+    "FIXME": {
+      "background": "#d9444a",
+      "foreground": "#000",
+      "iconColour": "#d9444a",
+      "icon": "alert",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // XXX: 實現方式待確認
+    "XXX": {
+      "background": "#ff8800",
+      "foreground": "#000",
+      "iconColour": "#ff8800",
+      "icon": "flame",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // NOTE: 功能說明
+    "NOTE": {
+      "background": "#00aaff",
+      "foreground": "#fff",
+      "iconColour": "#00aaff",
+      "icon": "info",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // HACK: 優化空間
+    "HACK": {
+      "background": "#8a2be2",
+      "foreground": "#fff",
+      "iconColour": "#8a2be2",
+      "icon": "tools",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // BUG: 程式碼有錯誤
+    "BUG": {
+      "background": "#ff0000",
+      "foreground": "#fff",
+      "iconColour": "#ff0000",
+      "icon": "bug",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // TEST: 程式碼有錯誤
+    "TEST": {
+      "background": "#8BC34A",
+      "foreground": "#000",
+      "iconColour": "#8BC34A",
+      "icon": "beaker",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // !: 比較複雜的、回頭再看可能會忘記的邏輯或功能說明
+    "!": {
+      "background": "#00000000",
+      "foreground": "#d9444a",
+      "iconColour": "#00000000",
+      "icon": "alert",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // ?: 需要與其他偕作者溝通的留言
+    "?": {
+      "background": "#00000000",
+      "foreground": "#f5c018",
+      "iconColour": "#00000000",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // >: 目錄索引(多用於css檔)
+    ">": {
+      "foreground": "#fff",
+      "iconColour": "#00000000",
+      "icon": "arrow-right",
+      "bold": true,
+      "type": "text-and-comment"
+    },
+    // //: 沒用卻要備份的程式碼
+    "//": {
+      "foreground": "#474747",
+      "iconColour": "#00000000",
+      "strikethrough": true,
+      "icon": "trash",
+      "type": "text-and-comment"
+    },
+    // *: 重點提示
+    "*": {
+      "foreground": "#28a745",
+      "iconColour": "#28a745",
+      "icon": "star",
+      "bold": true,
+      "type": "text-and-comment"
+    }
+  },
+
+  // 保哥設定 https://github.com/doggy8088/github-copilot-configs?tab=readme-ov-file
+  // *******************************
+  // 以下設定僅適用於 User Settings
+  // *******************************
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": true,
+    "powershell": false,
+    "typescript": true,
+    "vue": true
+  },
+
+  // ***************************************************
+  // 以下設定適用於 User Settings 或 Workspace Settings
+  // ***************************************************
+  "window.commandCenter": true,
+  "chat.commandCenter.enabled": true,
+
+  // 目前 gpt-4o-copilot 已經是預設值，但明確設定可確保一致性
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "github.copilot.editor.enableCodeActions": true,
+  "github.copilot.renameSuggestions.triggerAutomatically": true,
+  "workbench.commandPalette.experimental.askChatLocation": "chatView",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.inlineSuggest.edits.showCollapsed": true,
+
+  // GitHub Copilot Chat
+  "github.copilot.chat.localeOverride": "zh-TW",
+  "github.copilot.chat.useProjectTemplates": true,
+  "github.copilot.chat.scopeSelection": true,
+  "chat.detectParticipant.enabled": false,
+  "chat.promptFiles": true,
+  "chat.promptFilesLocations": {
+    ".github/prompts": true
+  },
+  "github.copilot.chat.languageContext.typescript.enabled": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  // GitHub Copilot Chat - 內嵌聊天 (Inline Chat)
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "inlineChat.holdToSpeech": true,
+  "inlineChat.finishOnType": false,
+  // GitHub Copilot Chat - 偵錯相關設定
+  "github.copilot.chat.startDebugging.enabled": true,
+  "github.copilot.chat.reviewSelection.enabled": true,
+  "github.copilot.chat.copilotDebugCommand.enabled": true,
+  "github.copilot.chat.edits.temporalContext.enabled": false,
+  // GitHub Copilot Chat - 測試相關設定
+  "github.copilot.chat.setupTests.enabled": true,
+  "github.copilot.chat.generateTests.codeLens": true,
+  // GitHub Copilot Chat Edit
+  "github.copilot.chat.edits.suggestRelatedFilesForTests": true,
+  "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true,
+
+  // GitHub Copilot Chat - Agent Mode
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 100,
+  "github.copilot.chat.agent.runTasks": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.newWorkspaceCreation.enabled": true,
+  "terminal.integrated.scrollback": 50000, // Agent Mode 建議調高預設 Terminal 的捲軸行數
+
+  "chat.mcp.enabled": true,
+  "chat.mcp.discovery.enabled": false
+  // "chat.mcp.discovery.enabled": {
+  //     "claude-desktop": false,
+  //     "windsurf": false,
+  //     "cursor-global": false,
+  //     "cursor-workspace": false
+  // },
+}
