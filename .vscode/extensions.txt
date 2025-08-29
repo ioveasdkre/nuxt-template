@@ -1,6 +1,5 @@
 aaron-bond.better-comments
 adrianwilczynski.toggle-hidden
-bradlc.vscode-tailwindcss
 christian-kohler.path-intellisense
 codezombiech.gitignore
 csstools.postcss
@@ -24,7 +23,6 @@ kisstkondoros.vscode-gutter-preview
 michelemelluso.code-beautifier
 ms-ceintl.vscode-language-pack-zh-hant
 naumovs.color-highlight
-nuxt.mdc
 oderwat.indent-rainbow
 oouo-diogo-perdigao.docthis
 pflannery.vscode-versionlens
@@ -42,3 +40,5 @@ wix.vscode-import-cost
 xabikos.javascriptsnippets
 zhuangtongfa.material-theme
 zignd.html-css-class-completion
+mrmlnc.vscode-scss
+ibiraj-s.vscode-scss-formatter
